@@ -8,27 +8,23 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
 #include <iostream>
-#include <vector>
-using namespace std;
-
-
 
 int main()
 {	
-	auto sum = 0;
+	int sum = 0;
 	
-	for (auto i = 0; i < 1000;i++)
+	for (int i = 0; i < 1000;i++)
 	{				
-		auto r3 = i % 3;
-		auto r5 = i % 5;
+		int r3 = i % 3;
+		int r5 = i % 5;
 
 		if(r3==0 || r5 == 0)
 		{
 			sum += i;
 		}
 	}
-	
-	cout << "Answer: " << sum << endl;
+
+	std::cout << "Answer: " << sum << std::endl;
 	
 	getchar();
 	
